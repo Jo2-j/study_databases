@@ -14,5 +14,5 @@ FROM
         ON P.SupplierID = S.SupplierID) 
 GROUP BY SupplierName
 ORDER BY COUNT(SupplierName) desc
-LIMIT 1;
+LIMIT 1
 ;
