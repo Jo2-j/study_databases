@@ -7,7 +7,7 @@
 -- Products - COUNT(ProductName)
 
 
-SELECT ProductName, Price, CustomerName, Quantity
+SELECT ProductName, Price, CustomerName, COUNT(ProductName)
 FROM ((((Customers left join Orders
 	ON Customers.CustomerID = Orders.CustomerID)
 	left join OrderDetails
