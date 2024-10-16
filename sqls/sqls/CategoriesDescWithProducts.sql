@@ -11,5 +11,5 @@ Categories as C INNER JOIN Products as P
 	                ON C.CategoryID = P.CategoryID
                  
 GROUP BY C.CategoryID
-ORDER BY COUNT(P.ProductName)
+ORDER BY COUNT(P.ProductName) desc
 ;
